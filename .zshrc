@@ -35,6 +35,7 @@ alias install='sudo pacman -S'
 alias update='sudo pacman -Sy'
 alias upgrade='sudo pacman -Syu'
 alias remove='sudo pacman -Rsc'
+
 # Alias's to modified commands
 alias cat='bat' 
 alias cp='cp -i'
@@ -125,7 +126,8 @@ note() {
 }
 
 #Searching and Opening Files in nvim
-alias v='fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse| xargs nvim'
+#alias v='fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse| xargs nvim'
+alias v='selected_file=$(fzf --layout=reverse --preview "bat --style=numbers --color=always {} | head -100") && [ -n "$selected_file" ] && nvim "$selected_file"'
 
 # To see if a command is aliased, a file, or a built-in command
 alias checkcommand="type -t"
@@ -144,7 +146,8 @@ alias folderssort='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -
 alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
-alias freespace="df -h --total|grep ^total"
+#alias freespace="df -h --total|grep ^total"
+alias freespace='df -h --total | awk '\''/^total/ { printf "Total: %-10s | Used: %-10s | Available: %-10s | Percentage Used: %-10s\n", $2, $3, $4, $5 }'\'''
 
 # Alias's for archives
 alias mktar='tar -cvf'

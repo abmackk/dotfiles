@@ -3,6 +3,7 @@ export LC_ALL=en_IN.UTF-8
 export LANG=en_IN.UTF-8
 export TERM="xterm-256color"                      # getting proper colors
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+export EDITOR=nvim
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export ZSH="$HOME/.oh-my-zsh"
@@ -184,3 +185,5 @@ eval "$(zoxide init zsh)"
 
 eval "$(starship init zsh)"
 
+export PATH="$HOME/.local/bin:$PATH"
+export NOTES_DIR=/home/odyssey/Projects/notes

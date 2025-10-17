@@ -1,0 +1,138 @@
+[username]
+style_user = "fg:#f07178 bold"   # red/pink
+style_root = "fg:#ffcb6b bold"   # yellow/gold
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = 'on [$hostname](fg:#82aaff bold) '   # blue
+trim_at = "."
+disabled = false
+
+[character]
+success_symbol = "[❯](fg:#c3e88d bold)"   # green
+error_symbol = "[✗](fg:#f07178 bold)"     # red/pink
+vimcmd_symbol = "[❮](fg:#c792ea bold)"    # purple
+
+[directory]
+read_only = " "
+truncation_length = 10
+truncate_to_repo = true
+style = "fg:#89ddff bold italic"   # cyan
+
+[cmd_duration]
+min_time = 4
+show_milliseconds = false
+disabled = false
+style = "fg:#ffcb6b bold italic"   # yellow/gold
+
+[aws]
+symbol = "  "
+style = "fg:#ffcb6b"   # yellow/gold
+
+[conda]
+symbol = " "
+style = "fg:#89ddff"   # cyan
+
+[dart]
+symbol = " "
+style = "fg:#f07178"   # red/pink
+
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "fg:#82aaff bold"   # blue
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+disabled = false
+
+[elixir]
+symbol = " "
+style = "fg:#c792ea"   # purple
+
+[elm]
+symbol = " "
+style = "fg:#c3e88d"   # green
+
+[git_branch]
+symbol = " "
+style = "fg:#89ddff"   # cyan
+
+[golang]
+symbol = " "
+style = "fg:#c3e88d"   # green
+
+[hg_branch]
+symbol = " "
+style = "fg:#82aaff"   # blue
+
+[java]
+symbol = " "
+style = "fg:#ffcb6b"   # yellow/gold
+
+[julia]
+symbol = " "
+style = "fg:#ffcb6b"   # yellow/gold
+
+[memory_usage]
+symbol = "󰍛 "
+style = "fg:#f07178"   # red/pink
+
+[nim]
+symbol = " "
+style = "fg:#c792ea"   # purple
+
+[nix_shell]
+symbol = " "
+style = "fg:#89ddff"   # cyan
+
+[package]
+symbol = "󰏗 "
+style = "fg:#a6accd"   # neutral text
+
+[perl]
+symbol = " "
+style = "fg:#c792ea"   # purple
+
+[php]
+symbol = " "
+style = "fg:#f78c6c"   # orange
+
+[python]
+symbol = " "
+format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
+style = "fg:#ffcb6b bold"   # yellow/gold
+pyenv_prefix = "venv "
+python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+detect_extensions = ["py"]
+version_format = "v${raw}"
+
+[ruby]
+symbol = " "
+style = "fg:#f07178"   # red/pink
+
+[rust]
+symbol = " "
+style = "fg:#c792ea"   # purple
+
+[scala]
+symbol = " "
+style = "fg:#f78c6c"   # orange
+
+[shlvl]
+symbol = " "
+style = "fg:#82aaff"   # blue
+
+[swift]
+symbol = "ﯣ "
+style = "fg:#c3e88d"   # green
+
+[nodejs]
+format = "via [ Node.js $version]($style) "
+style = "fg:#82aaff bold"   # blue
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+

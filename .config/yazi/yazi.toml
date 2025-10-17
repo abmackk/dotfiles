@@ -1,0 +1,4 @@
+[mgr]
+# Use terminal/system colors instead of overriding
+color_mode = "16"   # options: "8", "16", "256", "truecolor"
+

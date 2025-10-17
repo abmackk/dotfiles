@@ -1,0 +1,56 @@
+# ──────────────────────────────
+# Font
+# ──────────────────────────────
+font-family              = Mononoki Nerd Font Mono
+# font-family	         = JetBrainsMono Nerd Font
+font-family-italic       = OperatorMono
+font-feature             = calt
+font-feature             = liga
+font-feature             = ss13
+font-size                = 16
+window-inherit-font-size = true
+
+# ──────────────────────────────
+# Look and Feel
+# ──────────────────────────────
+adjust-cursor-thickness  = 3
+adjust-underline-position= 3
+bold-is-bright           = true
+cursor-opacity           = 1
+link-url                 = true
+mouse-hide-while-typing  = true
+
+# Theme: Catppuccin Mocha
+theme                    = Material Ocean
+
+# Override background to pure black
+# background               = 000000
+
+window-vsync             = true
+background-opacity       = 0.9	
+background-blur          = true
+window-padding-x         = 9
+window-padding-y         = 5
+window-padding-balance   = true
+window-padding-color     = extend
+window-decoration        = none
+window-theme             = system
+
+# Window dimensions (in columns x rows)
+window-width = 65
+window-height = 25
+
+# ──────────────────────────────
+# Clipboard & Selection
+# ──────────────────────────────
+clipboard-paste-protection     = true
+clipboard-trim-trailing-spaces = true
+copy-on-select                 = true
+
+# ──────────────────────────────
+# Behavior
+# ──────────────────────────────
+quit-after-last-window-closed = true
+scrollback-limit              = 4200
+shell-integration             = zsh
+shell-integration-features    = cursor,sudo,title
